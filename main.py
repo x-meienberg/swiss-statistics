@@ -3,7 +3,7 @@
 import requests
 import json
 
-response = requests.get('https://www.pxweb.bfs.admin.ch/api/v1/fr/px-x-0102020000_401/px-x-0102020000_401.px')
+response = requests.get('https://www.pxweb.bfs.admin.ch/api/v1/en/px-x-0102020000_401/px-x-0102020000_401.px')
 
 # Check Server Status
 """
@@ -32,3 +32,4 @@ def jprint(obj):
     print(text)
 
 jprint(response.json())
+
