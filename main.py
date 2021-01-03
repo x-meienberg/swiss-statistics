@@ -3,10 +3,10 @@
 import requests
 import json
 
-response = requests.get('https://www.pxweb.bfs.admin.ch/api/v1/en/px-x-0102020000_401/px-x-0102020000_401.px')
+response = requests.get('https://data.bs.ch/api/v2/catalog/datasets/100079/exports/json')
 
 # Check Server Status
-"""
+
 if response.status_code == 200:
     print('Ok')
 elif response.status_code == 301:
@@ -21,10 +21,9 @@ elif response.status_code == 404:
     print('Not found')
 else: 
     print('Server not ready')                            
-"""
+
 
 #print(response.json())
-
 
 
 def jprint(obj):
